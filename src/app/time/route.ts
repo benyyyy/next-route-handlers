@@ -1,3 +1,7 @@
+export const dynamic = "force-static";
+ export const revalidate = 10;
+
 export async function GET() {
-    return new Response("Hello world!");
-  }
+  return Response.json({ time: new Date().toLocaleTimeString() });
+}
+  
